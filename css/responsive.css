@@ -1,0 +1,294 @@
+/* ============================================================
+   «آشنا» — responsive.css
+   فقط بریک‌پوینت‌ها و تنظیمات موبایل/تبلت
+   ============================================================ */
+
+/* ----- لپ‌تاپ و تبلت افقی ----- */
+@media (max-width: 1024px) {
+  .container {
+    padding-inline: 16px;
+  }
+
+  .translator-card {
+    padding: 18px;
+  }
+
+  .panel {
+    min-height: 312px;
+  }
+
+  .source-textarea,
+  .output-area {
+    min-height: 200px;
+  }
+}
+
+/* ----- تبلت عمودی و موبایل بزرگ: پشته‌ای ----- */
+@media (max-width: 880px) {
+  .translator-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .swap-slot {
+    padding: 0;
+    margin-block: -14px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .swap-btn {
+    width: 54px;
+    height: 54px;
+    border: 3px solid var(--surface);
+    box-shadow: var(--shadow-swap), 0 0 0 1px var(--line);
+  }
+
+  .panel {
+    min-height: 268px;
+  }
+
+  .source-textarea,
+  .output-area {
+    min-height: 180px;
+  }
+
+  .output-state {
+    min-height: 172px;
+  }
+}
+
+/* ----- موبایل ----- */
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 13px;
+  }
+
+  .header-inner {
+    height: 58px;
+    gap: 8px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+  }
+
+  .brand-name {
+    font-size: 17.5px;
+  }
+
+  .brand-tag {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 3px;
+  }
+
+  .icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .main {
+    padding-block: 16px 6px;
+  }
+
+  .translator-card {
+    padding: 12px;
+    border-radius: 19px;
+    animation-duration: 0.4s;
+  }
+
+  .panel {
+    min-height: 252px;
+    border-radius: 15px;
+  }
+
+  .panel-head {
+    padding: 9px 9px 4px;
+  }
+
+  .panel-body {
+    padding: 4px 5px;
+  }
+
+  .panel-foot {
+    padding: 8px 9px 10px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .source-textarea,
+  .output-area {
+    font-size: 16px; /* جلوگیری از زوم خودکار iOS هنگام فوکوس */
+    min-height: 168px;
+  }
+
+  .output-state {
+    min-height: 160px;
+  }
+
+  .lang-pill {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  .kbd-hint {
+    display: none;
+  }
+
+  .btn {
+    height: 42px;
+    padding-inline: 15px;
+  }
+
+  .btn--ghost,
+  .btn--soft {
+    height: 38px;
+  }
+
+  .status-pill {
+    min-width: 0;
+    font-size: 12px;
+    padding: 5px 9px;
+  }
+
+  .char-count {
+    font-size: 12px;
+  }
+
+  .drawer {
+    width: 100%;
+    border-inline-end: none;
+    box-shadow: none;
+  }
+
+  .drawer-head {
+    padding: 15px 14px 9px;
+  }
+
+  .drawer-tools {
+    padding: 4px 14px 12px;
+  }
+
+  .drawer-body {
+    padding: 11px 11px 20px;
+  }
+
+  .modal {
+    padding: 0;
+    place-items: end center;
+  }
+
+  .modal-card {
+    width: 100%;
+    max-height: min(88dvh, 720px);
+    border-radius: 22px 22px 0 0;
+    border-bottom: none;
+    padding: 18px 16px calc(16px + env(safe-area-inset-bottom));
+    transform: translateY(24px);
+  }
+
+  .setting-row {
+    gap: 12px;
+    padding: 13px 0;
+  }
+
+  .setting-row--top {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .segmented {
+    width: 100%;
+  }
+
+  .segmented button {
+    flex: 1;
+    height: 38px;
+    padding-inline: 6px;
+    font-size: 13.5px;
+  }
+
+  .switch .track {
+    width: 50px;
+    height: 28px;
+  }
+
+  .switch .knob {
+    width: 22px;
+    height: 22px;
+    top: 3px;
+  }
+
+  .switch input:checked + .track .knob {
+    transform: translateX(-22px);
+  }
+
+  .app-footer {
+    padding: 22px 0 calc(24px + env(safe-area-inset-bottom));
+  }
+
+  .footer-note {
+    font-size: 12px;
+    padding-inline: 8px;
+  }
+
+  .toast {
+    font-size: 13px;
+    padding: 10px 13px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ----- موبایل خیلی کوچک ----- */
+@media (max-width: 380px) {
+  .brand-name {
+    font-size: 16.5px;
+  }
+
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn {
+    padding-inline: 12px;
+    font-size: 14px;
+  }
+
+  .lang-pill {
+    font-size: 12.5px;
+    gap: 6px;
+    padding: 5px 8px;
+  }
+
+  .panel-actions {
+    gap: 2px;
+  }
+}
+
+/* ----- صفحه‌های کوتاه (مثلاً گوشی افقی) ----- */
+@media (max-height: 560px) and (max-width: 960px) {
+  .main {
+    padding-block: 10px 4px;
+  }
+
+  .panel {
+    min-height: 210px;
+  }
+
+  .source-textarea,
+  .output-area {
+    min-height: 130px;
+  }
+}
